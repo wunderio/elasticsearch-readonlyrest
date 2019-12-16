@@ -13,6 +13,6 @@ jobs:
     - name: Docker Hub login
       run: docker login --username imiksu --password ${{ secrets.DOCKER_HUB_TOKEN }}
     - name: Build 6.8.4-1.18.9 image
-      run: docker build --tag elasticsearch-readonlyrest:6.8.4-1.18.9 --build-arg "ES_VERSION=6.8.4" --build-arg "ES_ROR_VERSION=1.18.9" .
+      run: docker build --tag wunderio/elasticsearch-readonlyrest:6.8.4-1.18.9 --build-arg "ES_VERSION=6.8.4" --build-arg "ES_ROR_VERSION=1.18.9" .
     - name: Push to registry
       run: docker push wunderio/elasticsearch-readonlyrest:6.8.4-1.18.9
