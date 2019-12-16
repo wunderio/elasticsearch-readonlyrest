@@ -10,5 +10,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - name: Docker Hub login
+      run: echo ${{ secrets.DOCKER_HUB_TOKEN }} | docker login --username imiksu
     - name: Build 6.8.4-1.18.9 image
       run: docker build --tag elasticsearch-readonlyrest:6.8.4-1.18.9 --build-arg "ES_VERSION=6.8.4" --build-arg "ES_ROR_VERSION=1.18.9" .
