@@ -11,8 +11,8 @@ For adding new versions:
   version and `YYY` is the readonlyrest version
 * Update `README.md` file for new supported version. Latest versions on top
 * Update `.github/workflows/build.yml` by adding a build task for your version
-* Update `.github/workflows/build-and-push.yml` by adding a build task for your
-  version
+* Update `.github/workflows/build-and-push.yml` by adding a build and push task
+  for your version
 * Issue an pull request and wait for review
 
 ## Build Arguments
