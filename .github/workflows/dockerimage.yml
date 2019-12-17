@@ -6,7 +6,7 @@ on:
     - cron: '0 2 * * *'
 
 jobs:
-  build-7.5.x-1.18.x:
+  build-75x-118x:
     runs-on: ubuntu-latest
     name: Build 7.5.x - 1.18.x
     steps:
@@ -15,7 +15,7 @@ jobs:
       run: docker build --tag wunderio/elasticsearch-readonlyrest:7.5.0-1.18.9 --build-arg "ES_VERSION=7.5.0" --build-arg "ES_ROR_VERSION=1.18.9" .
     - name: Print images
       run: docker images
-  build-6.8.x-1.18.x:
+  build-68x-118x:
     runs-on: ubuntu-latest
     name: Build 6.8.x - 1.18.x
     steps:
