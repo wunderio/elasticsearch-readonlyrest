@@ -35,6 +35,7 @@ jobs:
   print-images:
     runs-on: ubuntu-latest
     name: Print images
+    needs: [build-75x-118x, build-68x-118x]
     steps:
       - name: Print images
         run: docker images
