@@ -1,7 +1,7 @@
 name: Build and Publish
 
 on:
-  pull_requests:
+  pull_request:
     branches:
       - master
 
