@@ -20,6 +20,9 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
+    - name: Build 6.8.6-1.18.9 image
+      run: docker build --tag wunderio/elasticsearch-readonlyrest:6.8.6-1.18.9 --build-arg "ES_VERSION=6.8.6" --build-arg "ES_ROR_VERSION=1.18.9" .
+
     - name: Build 6.8.5-1.18.9 image
       run: docker build --tag wunderio/elasticsearch-readonlyrest:6.8.5-1.18.9 --build-arg "ES_VERSION=6.8.5" --build-arg "ES_ROR_VERSION=1.18.9" .
 
