@@ -3,6 +3,8 @@
 Container image for running [Elasticsearch](https://www.elastic.co/) with
 [ReadonlyREST](https://readonlyrest.com/) plugin.
 
+Read [plugin documentation](https://github.com/beshu-tech/readonlyrest-docs/blob/master/elasticsearch.md).
+
 ## Pull Requests
 
 For adding new versions:
