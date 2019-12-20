@@ -26,6 +26,7 @@ For adding new versions:
 
 ## Supported Versions
 
+* Elasticsearch **7.5.1** with readonlyrest plugin version **1.18.9**
 * Elasticsearch **7.5.0** with readonlyrest plugin version **1.18.9**
 * Elasticsearch **6.8.5** with readonlyrest plugin version **1.18.9**
 * Elasticsearch **6.8.4** with readonlyrest plugin version **1.18.9**
