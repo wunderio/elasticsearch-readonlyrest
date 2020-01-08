@@ -12,6 +12,12 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
+    - name: Build 7.5.1-1.18.10 image
+      run: docker build --tag wunderio/elasticsearch-readonlyrest:7.5.1-1.18.10 --build-arg "ES_VERSION=7.5.1" --build-arg "ES_ROR_VERSION=1.18.10" .
+
+    - name: Build 7.5.0-1.18.10 image
+      run: docker build --tag wunderio/elasticsearch-readonlyrest:7.5.0-1.18.10 --build-arg "ES_VERSION=7.5.0" --build-arg "ES_ROR_VERSION=1.18.10" .
+
     - name: Build 7.5.1-1.18.9 image
       run: docker build --tag wunderio/elasticsearch-readonlyrest:7.5.1-1.18.9 --build-arg "ES_VERSION=7.5.1" --build-arg "ES_ROR_VERSION=1.18.9" .
 
@@ -22,6 +28,15 @@ jobs:
     name: Build 6.8.x - 1.18.x
     steps:
     - uses: actions/checkout@v1
+
+    - name: Build 6.8.6-1.18.10 image
+      run: docker build --tag wunderio/elasticsearch-readonlyrest:6.8.6-1.18.10 --build-arg "ES_VERSION=6.8.6" --build-arg "ES_ROR_VERSION=1.18.10" .
+
+    - name: Build 6.8.5-1.18.10 image
+      run: docker build --tag wunderio/elasticsearch-readonlyrest:6.8.5-1.18.10 --build-arg "ES_VERSION=6.8.5" --build-arg "ES_ROR_VERSION=1.18.10" .
+
+    - name: Build 6.8.4-1.18.10 image
+      run: docker build --tag wunderio/elasticsearch-readonlyrest:6.8.4-1.18.10 --build-arg "ES_VERSION=6.8.4" --build-arg "ES_ROR_VERSION=1.18.10" .
 
     - name: Build 6.8.6-1.18.9 image
       run: docker build --tag wunderio/elasticsearch-readonlyrest:6.8.6-1.18.9 --build-arg "ES_VERSION=6.8.6" --build-arg "ES_ROR_VERSION=1.18.9" .
