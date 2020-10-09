@@ -1,5 +1,7 @@
 # elasticsearch-readonlyrest
 
+# NOTE: This repository is deprecated and will be removed
+
 Container image for running [Elasticsearch](https://www.elastic.co/) with
 [ReadonlyREST](https://readonlyrest.com/) plugin.
 
